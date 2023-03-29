@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <ImageView
+        android:id="@+id/login_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:src="@drawable/ic_launcher_account" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_logo"
+        android:layout_marginTop="32dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextEmail"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="16dp" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPassword"
+        android:layout_marginTop="32dp"
+        android:text="Login"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimary"
+        android:padding="16dp" />
+
+</RelativeLayout>
